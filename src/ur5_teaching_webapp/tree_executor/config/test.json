@@ -1,0 +1,23 @@
+{
+	"task": [{
+		"service_name": "motion_server",
+		"motion_task": "saved_joint",
+		"payload": "home"
+	}, {
+		"service_name": "motion_server",
+		"motion_task": "saved_joint",
+		"payload": "sparebay_home"
+	},{
+		"service_name": "motion_server",
+		"motion_task": "custom_joint",
+		"payload": [0, -1.2, -1.5, 4.2, 1.6, 0]
+	}, {
+		"service_name": "motion_server",
+		"motion_task": "saved_cartesian",
+		"payload": "dispose_box"
+	},{
+		"service_name": "motion_server",
+		"motion_task": "custom_cartesian",
+		"payload": [-0.3, 0.2, 0.7, 0.707, 0.707, 0, 0]
+	}]
+}

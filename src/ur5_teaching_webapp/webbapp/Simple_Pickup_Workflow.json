@@ -1,0 +1,139 @@
+{
+  "id": 2,
+  "name": "Simple_Pickup_Workflow",
+  "fleet_type": 2,
+  "graph_id": "c9fda6bb-ea84-4562-ae2b-ffcbc5e9a265",
+  "tree": {
+    "id": "0.1",
+    "parent": "0",
+    "label": "Label 1",
+    "comment": "No comment",
+    "children": [
+      {
+        "id": "1.1",
+        "parent": "0.1",
+        "control_flow": "sequence",
+        "children": [
+          {
+            "template_id": 21,
+            "name": "Goto",
+            "description": "Goto goal command",
+            "command": "Goto",
+            "command_method": "goto",
+            "parameters": {
+              "waypoint_id": 23,
+              "station_id": "2f485416-ee14-459a-8718-25c3ef2fc19a",
+              "pos": [163, -113],
+              "waypoint_name": "ST10"
+            },
+            "type": "common",
+            "is_active": true,
+            "id": "2.1",
+            "parent": "1.1",
+            "label": "pick up station",
+            "depth": 2,
+            "errors": [],
+            "children": [],
+            "validators": []
+          },
+          {
+            "template_id": 7,
+            "name": "Pickup",
+            "description": "Picks up an item into the AMR slots",
+            "command": "Slots",
+            "command_method": "pickup",
+            "parameters": {
+              "timeout": 0,
+              "pos": [139, -28],
+              "station_id": "2f485416-ee14-459a-8718-25c3ef2fc19a"
+            },
+            "type": "station",
+            "is_active": true,
+            "id": "2.2",
+            "parent": "1.1",
+            "depth": 2,
+            "errors": [],
+            "children": [],
+            "validators": []
+          }
+        ],
+        "parameters": {
+          "pos": [-28, -118],
+          "group_id": "2f485416-ee14-459a-8718-25c3ef2fc19a",
+          "station_id": "2f485416-ee14-459a-8718-25c3ef2fc19a"
+        },
+        "depth": 1,
+        "errors": [],
+        "validators": []
+      },
+      {
+        "id": "1.2",
+        "parent": "0.1",
+        "control_flow": "sequence",
+        "children": [
+          {
+            "template_id": 21,
+            "name": "Goto",
+            "description": "Goto goal command",
+            "command": "Goto",
+            "command_method": "goto",
+            "parameters": {
+              "waypoint_id": 23,
+              "station_id": "732e7154-6954-4539-8462-715893f8f002",
+              "pos": [161, 141],
+              "waypoint_name": "ST10"
+            },
+            "type": "common",
+            "is_active": true,
+            "id": "2.3",
+            "parent": "1.2",
+            "depth": 2,
+            "errors": [],
+            "children": [],
+            "validators": []
+          },
+          {
+            "template_id": 8,
+            "name": "Delivery",
+            "description": "Delivers an item from the AMR slots",
+            "command": "Slots",
+            "command_method": "delivery",
+            "parameters": {
+              "timeout": 0,
+              "pos": [131, 288],
+              "station_id": "732e7154-6954-4539-8462-715893f8f002"
+            },
+            "type": "station",
+            "is_active": true,
+            "id": "2.4",
+            "parent": "1.2",
+            "depth": 2,
+            "errors": [],
+            "children": [],
+            "validators": []
+          }
+        ],
+        "parameters": {
+          "pos": [-30, 136],
+          "group_id": "732e7154-6954-4539-8462-715893f8f002",
+          "station_id": "732e7154-6954-4539-8462-715893f8f002"
+        },
+        "depth": 1,
+        "errors": [],
+        "validators": []
+      }
+    ],
+    "control_flow": "sequence",
+    "parameters": { "pos": [-282, 52] },
+    "depth": 0,
+    "errors": [],
+    "validators": []
+  },
+  "is_active": true,
+  "created_timestamp": "2022-02-08 03:44:03",
+  "updated_timestamp": "2022-07-14 17:53:19",
+  "depth": -1,
+  "errors": [],
+  "children": [],
+  "validators": [null, null, null, null]
+}

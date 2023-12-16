@@ -1,0 +1,11 @@
+{
+  "nodes": {
+    "0": { "type": "start", "x": 300, "y": 20, "attached_links": [1] },
+    "1": { "type": "sequence", "x": 150, "y": 100, "attached_links": [0, 2] },
+    "2": { "type": "fallback", "x": 200, "y": 100, "attached_links": [1] }
+  },
+  "links": {
+    "1": { "start_node": 0, "end_node": 1 },
+    "2": { "start_node": 1, "end_node": 2 }
+  }
+}

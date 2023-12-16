@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "parent": 0,
+    "droppable": true,
+    "text": "Start",
+    "data": {
+      "fileType": "start",
+      "status": "",
+      "selected": false,
+      "ros_payload": {
+        "service": "",
+        "task": "control_node",
+        "data": "start",
+        "children": []
+      }
+    }
+  },
+  {
+    "id": 2,
+    "parent": 1,
+    "droppable": true,
+    "text": "sequence_2",
+    "data": {
+      "fileType": "sequence",
+      "status": "",
+      "valid": false,
+      "selected": false,
+      "ros_payload": {
+        "service": "",
+        "task": "control_node",
+        "data": "sequence",
+        "children": []
+      }
+    }
+  }
+]

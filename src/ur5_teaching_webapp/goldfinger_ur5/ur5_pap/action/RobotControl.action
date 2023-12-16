@@ -1,0 +1,39 @@
+# Define the goal
+string motion_task # saved_joint, 
+int8 gripper
+string payload
+string extra_argument1
+geometry_msgs/PoseStamped target_pose
+
+int8 GO_TO_HOME = 10
+int8 GO_TO_SPAREBAY = 11
+
+int8 STATUS = 2
+int8 READ_FORCE_TORQUE = 21
+
+int8 GO_TO_LOCATION = 3
+
+int8 PICK = 4
+
+int8 PLACE = 5
+
+int8 DEBUG = 6
+
+int8 CHANGE_GRIPPER = 7
+int8 SB_GRIPPER = 70
+int8 LOCKER_GRIPPER = 71
+
+int8 DASHBOARD_SERVER_QUERY = 80
+int8 DASHBOARD_SERVER_ACTION = 81
+
+---
+# Define the result
+bool success
+float32[] force_torque
+geometry_msgs/PoseStamped current_pose
+string dashboard_robot_status
+string dashboard_program_status
+string dashboard_safety_status
+---
+# Define a feedback message
+float32 percent_complete

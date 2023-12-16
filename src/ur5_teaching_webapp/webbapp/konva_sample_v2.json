@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "parent": null,
+    "children": [
+      {
+        "id": 2,
+        "parent": 1,
+        "children": [],
+        "pose": [100, 200],
+        "type": "sequence"
+      },
+      {
+        "id": 2,
+        "parent": 1,
+        "children": [],
+        "pose": [100, 200],
+        "type": "sequence"
+      }
+    ],
+    "pose": [100, 200],
+    "type": "start"
+  },
+  {
+    "id": 2,
+    "parent": null,
+    "children": [],
+    "pose": [100, 200],
+    "type": "sequence"
+  }
+]

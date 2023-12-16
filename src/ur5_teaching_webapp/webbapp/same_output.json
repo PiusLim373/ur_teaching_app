@@ -1,0 +1,61 @@
+{
+  "_id": "62dbbc9ce337d5f18bd090d2",
+  "task": [
+    {
+      "id": 0,
+      "name": "Saved Joint 0",
+      "service": "motion_server",
+      "task": "saved_joint",
+      "payload": "home",
+      "status": ""
+    },
+    {
+      "id": 1,
+      "name": "Saved Joint 1",
+      "service": "motion_server",
+      "task": "saved_joint",
+      "payload": "sparebay_home",
+      "status": "created"
+    },
+    {
+      "id": 2,
+      "name": "Custom Joint 2",
+      "service": "motion_server",
+      "task": "custom_joint",
+      "payload": [0, -1.2, -1.5, 4.2, 1.6, 0],
+      "status": "created"
+    },
+    {
+      "id": 3,
+      "name": "Saved Cartesian 3",
+      "service": "motion_server",
+      "task": "saved_cartesian",
+      "payload": "dispose_box",
+      "status": "created"
+    },
+    {
+      "id": 4,
+      "name": "Custom Cartesian 4",
+      "service": "motion_server",
+      "task": "custom_cartesian",
+      "payload": [-0.3, 0.2, 0.7, 0.707, 0.707, 0, 0],
+      "status": "created"
+    },
+    {
+      "id": 5,
+      "name": "Vision 5",
+      "service": "vision_server",
+      "task": "get_vision",
+      "payload": "temp_brac",
+      "status": "created"
+    },
+    {
+      "id": 6,
+      "name": "PointCloud 6",
+      "service": "pcl_server",
+      "task": "get_coor",
+      "payload": [200, 300, 180],
+      "status": "created"
+    }
+  ]
+}

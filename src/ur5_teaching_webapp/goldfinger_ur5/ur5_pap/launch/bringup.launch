@@ -1,0 +1,5 @@
+<launch>
+    <include file="$(find ur5_pap)/launch/demo.launch" />
+    <node name="motion_server" pkg="ur5_pap" type="motion_server.py" output="screen" />
+    <node name="tree_executor_node" pkg="tree_executor" type="tree_executor_node.py" output="screen" />
+</launch>

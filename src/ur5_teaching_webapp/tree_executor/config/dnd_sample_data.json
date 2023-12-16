@@ -1,0 +1,22 @@
+{
+  "id": "ui_issued_testing",
+  "task": [
+    {
+      "id": 7,
+      "parent": 2,
+      "text": "CustomJoint_1",
+      "droppable": false,
+      "data": {
+        "fileType": "custom_joint",
+        "valid": false,
+        "status": "",
+        "selected": false,
+        "ros_payload": {
+          "service": "motion_service",
+          "task": "custom_joint",
+          "data": [0.2, -1.1, -1.5, 4.2, 1.6, 0]
+        }
+      }
+    }
+  ]
+}

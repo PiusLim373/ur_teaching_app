@@ -1,0 +1,143 @@
+{
+  "_id": "62dbbc9ce337d5f18bd090d2",
+  "task": [
+    {
+      "id": 3,
+      "parent": 8,
+      "text": "savedJoint_3",
+      "data": {
+        "fileType": "saved_joint",
+        "valid": true,
+        "status": "",
+        "selected": false,
+        "ros_payload": {
+          "service": "motion_service",
+          "task": "saved_joint",
+          "data": "home",
+          "children": []
+        }
+      }
+    },
+    {
+      "id": 4,
+      "parent": 8,
+      "text": "savedJoint_4",
+      "data": {
+        "fileType": "saved_joint",
+        "valid": true,
+        "status": "",
+        "selected": false,
+        "ros_payload": {
+          "service": "motion_service",
+          "task": "saved_joint",
+          "data": "sparebay_home",
+          "children": []
+        }
+      }
+    },
+    {
+      "id": 1,
+      "parent": 0,
+      "droppable": true,
+      "text": "Start",
+      "data": {
+        "fileType": "start",
+        "status": "",
+        "selected": false,
+        "ros_payload": {
+          "service": "",
+          "task": "control_node",
+          "data": "start",
+          "children": []
+        }
+      }
+    },
+    {
+      "id": 2,
+      "parent": 1,
+      "droppable": true,
+      "text": "sequence_2",
+      "data": {
+        "fileType": "sequence",
+        "status": "",
+        "valid": false,
+        "selected": false,
+        "ros_payload": {
+          "service": "",
+          "task": "control_node",
+          "data": "sequence",
+          "children": []
+        }
+      }
+    },
+    {
+      "id": 8,
+      "parent": 2,
+      "droppable": true,
+      "text": "sequence_8",
+      "data": {
+        "fileType": "sequence",
+        "status": "",
+        "valid": false,
+        "selected": false,
+        "ros_payload": {
+          "service": "",
+          "task": "control_node",
+          "data": "sequence",
+          "children": []
+        }
+      }
+    },
+    {
+      "id": 5,
+      "parent": 2,
+      "text": "customJoint_5",
+      "data": {
+        "fileType": "custom_joint",
+        "valid": true,
+        "status": "",
+        "selected": false,
+        "ros_payload": {
+          "service": "motion_service",
+          "task": "custom_joint",
+          "data": [0, -1.2, -1.5, 4.2, 1.6, 0],
+          "children": []
+        }
+      }
+    },
+    {
+      "id": 6,
+      "parent": 2,
+      "text": "savedCartesian_6",
+      "data": {
+        "fileType": "saved_cartesian",
+        "valid": true,
+        "status": "",
+        "selected": false,
+        "ros_payload": {
+          "service": "motion_service",
+          "task": "saved_cartesian",
+          "data": "dispose_box",
+          "children": []
+        }
+      }
+    },
+    {
+      "id": 7,
+      "parent": 2,
+      "text": "customCartesian_7",
+      "data": {
+        "fileType": "custom_cartesian",
+        "valid": true,
+        "status": "",
+        "selected": false,
+        "ros_payload": {
+          "service": "motion_service",
+          "task": "custom_cartesian",
+          "data": [-0.3, 0.2, 0.7, 0.707, 0.707, 0, 0],
+          "children": []
+        }
+      }
+    }
+  ]
+}

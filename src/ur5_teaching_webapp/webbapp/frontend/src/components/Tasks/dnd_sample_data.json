@@ -1,0 +1,162 @@
+[
+  {
+    "id": 3,
+    "parent": 8,
+    "droppable": false,
+    "text": "savedJoint_3",
+    "data": {
+      "fileType": "saved_joint",
+      "status": "",
+      "selected": false,
+      "valid": false,
+      "payloadDataValid": true,
+      "invalidMsg": "Invalid payload data",
+      "ros_payload": {
+        "service": "motion_service",
+        "task": "saved_joint",
+        "data": "home",
+        "children": []
+      }
+    }
+  },
+  {
+    "id": 4,
+    "parent": 8,
+    "droppable": false,
+    "text": "savedJoint_4",
+    "data": {
+      "fileType": "saved_joint",
+      "status": "",
+      "selected": false,
+      "valid": false,
+      "payloadDataValid": true,
+      "invalidMsg": "Invalid payload data",
+      "ros_payload": {
+        "service": "motion_service",
+        "task": "saved_joint",
+        "data": "sparebay_home",
+        "children": []
+      }
+    }
+  },
+  {
+    "id": 1,
+    "parent": 0,
+    "droppable": true,
+    "text": "Start",
+    "data": {
+      "fileType": "start",
+      "status": "",
+      "selected": false,
+      "valid": false,
+      "payloadDataValid": true,
+      "invalidMsg": "Control node must have at least one child",
+      "ros_payload": {
+        "service": "",
+        "task": "control_node",
+        "data": "start",
+        "children": []
+      }
+    }
+  },
+  {
+    "id": 2,
+    "parent": 1,
+    "droppable": true,
+    "text": "sequence_2",
+    "data": {
+      "fileType": "sequence",
+      "status": "",
+      "selected": false,
+      "valid": false,
+      "payloadDataValid": true,
+      "invalidMsg": "Control node must have at least one child",
+      "ros_payload": {
+        "service": "",
+        "task": "control_node",
+        "data": "sequence",
+        "children": []
+      }
+    }
+  },
+  {
+    "id": 8,
+    "parent": 2,
+    "droppable": true,
+    "text": "fallback_8",
+    "data": {
+      "fileType": "fallback",
+      "status": "",
+      "selected": false,
+      "valid": false,
+      "payloadDataValid": true,
+      "invalidMsg": "Control node must have at least one child",
+      "ros_payload": {
+        "service": "",
+        "task": "control_node",
+        "data": "fallback",
+        "children": []
+      }
+    }
+  },
+  {
+    "id": 5,
+    "parent": 2,
+    "droppable": false,
+    "text": "customJoint_5",
+    "data": {
+      "fileType": "custom_joint",
+      "status": "",
+      "selected": false,
+      "valid": false,
+      "payloadDataValid": true,
+      "invalidMsg": "Invalid payload data",
+      "ros_payload": {
+        "service": "motion_service",
+        "task": "custom_joint",
+        "data": [0, -1.2, -1.5, 4.2, 1.6, 0],
+        "children": []
+      }
+    }
+  },
+  {
+    "id": 6,
+    "parent": 2,
+    "droppable": false,
+    "text": "savedCartesian_6",
+    "data": {
+      "fileType": "saved_cartesian",
+      "status": "",
+      "selected": false,
+      "valid": false,
+      "payloadDataValid": true,
+      "invalidMsg": "Invalid payload data",
+      "ros_payload": {
+        "service": "motion_service",
+        "task": "saved_cartesian",
+        "data": "dispose_box",
+        "children": []
+      }
+    }
+  },
+  {
+    "id": 7,
+    "parent": 2,
+    "droppable": false,
+    "text": "customCartesian_7",
+    "data": {
+      "fileType": "custom_cartesian",
+      "status": "",
+      "selected": false,
+      "valid": false,
+      "payloadDataValid": true,
+      "invalidMsg": "Invalid payload data",
+      "ros_payload": {
+        "service": "motion_service",
+        "task": "custom_cartesian",
+        "data": [-0.3, 0.2, 0.7, 0.707, 0.707, 0, 0],
+        "children": []
+      }
+    }
+  }
+]
